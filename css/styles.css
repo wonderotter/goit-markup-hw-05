@@ -125,6 +125,18 @@ body {
     color: var(--brand-color)
 }
 
+.nav-link:after {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 78px;
+    height: 4px;
+    background-color:var(--color-active-btn);
+    border-radius: 2px;
+    content: '';
+    margin-top: 24px;
+}
+
 .contact-link {
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -565,6 +577,7 @@ body {
     pointer-events: none;
     
 }
+
 .modal {
     position: absolute;
     top: 50%;
@@ -589,7 +602,8 @@ body {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-  }
+}
+
   .modal-close-btn:hover,
   .modal-close-btn:focus {
     background-color: #404BBF;
